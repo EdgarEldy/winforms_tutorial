@@ -81,5 +81,8 @@
       <Content Include=".gitignore" />
       <Content Include="README.md" />
     </ItemGroup>
+    <ItemGroup>
+      <Folder Include="Models" />
+    </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
