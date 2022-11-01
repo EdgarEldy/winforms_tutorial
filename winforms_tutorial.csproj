@@ -105,6 +105,7 @@
       <Content Include="README.md" />
     </ItemGroup>
     <ItemGroup>
+      <Folder Include="Data" />
       <Folder Include="Forms" />
       <Folder Include="Models" />
       <Folder Include="Presenters" />
