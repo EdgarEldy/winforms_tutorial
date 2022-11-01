@@ -67,6 +67,7 @@
         <Reference Include="System.Xml" />
     </ItemGroup>
     <ItemGroup>
+        <Compile Include="Data\WinformsDbContext.cs" />
         <Compile Include="Form1.cs">
             <SubType>Form</SubType>
         </Compile>
@@ -105,7 +106,6 @@
       <Content Include="README.md" />
     </ItemGroup>
     <ItemGroup>
-      <Folder Include="Data" />
       <Folder Include="Forms" />
       <Folder Include="Models" />
       <Folder Include="Presenters" />
