@@ -27,5 +27,8 @@ namespace winforms_tutorial.Models
         public DateTime CreatedAt { get; set; }
 
         public DateTime UpdatedAt { get; set; }
+
+        // Add relationship to Category model
+        public Category Category { get; set; }
     }
 }
