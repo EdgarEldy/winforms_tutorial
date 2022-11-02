@@ -9,3 +9,5 @@ riderModule.iml
 
 # Migrations files
 Migrations
+
+.vs
