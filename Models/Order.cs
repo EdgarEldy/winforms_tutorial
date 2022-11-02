@@ -1,3 +1,5 @@
+using System;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace winforms_tutorial.Models
@@ -12,5 +14,19 @@ namespace winforms_tutorial.Models
         }
         
         // Order properties goes here...
+        [Key]
+        public int Id { get; set; }
+
+        public int? CustomerId { get; set; }
+
+        public int? ProductId { get; set; }
+
+        public int Qty { get; set; }
+
+        public double Total { get; set; }
+
+        public DateTime CreatedAt { get; set; }
+
+        public DateTime UpdatedAt { get; set; }
     }
 }
