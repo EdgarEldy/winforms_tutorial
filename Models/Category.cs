@@ -6,6 +6,10 @@ namespace winforms_tutorial.Models
     public class Category
     {
         // Constructor
+        public Category()
+        {
+            
+        }
     }
     
     // Category properties goes here...
