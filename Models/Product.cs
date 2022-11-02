@@ -17,6 +17,7 @@ namespace winforms_tutorial.Models
         [Key]
         public int Id { get; set; }
 
+        [ForeignKey("Category")]
         public int? CategoryId { get; set; }
 
         public string ProductName { get; set; }
