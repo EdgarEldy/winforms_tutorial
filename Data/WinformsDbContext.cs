@@ -1,4 +1,5 @@
 using System.Data.Entity;
+using winforms_tutorial.Models;
 
 namespace winforms_tutorial.Data
 {
@@ -9,5 +10,9 @@ namespace winforms_tutorial.Data
             : base("name=WinformsDbContext")
         {
         }
+
+        // DbSets goes here..
+        // Register Category DbSet
+        public DbSet<Category> Categories { get; set; }
     }
 }
