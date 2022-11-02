@@ -14,5 +14,8 @@ namespace winforms_tutorial.Data
         // DbSets goes here..
         // Register Category DbSet
         public DbSet<Category> Categories { get; set; }
+
+        // Register Product DbSet
+        public DbSet<Product> Products { get; set; }
     }
 }
