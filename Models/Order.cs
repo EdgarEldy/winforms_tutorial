@@ -30,5 +30,8 @@ namespace winforms_tutorial.Models
         public DateTime CreatedAt { get; set; }
 
         public DateTime UpdatedAt { get; set; }
+
+        // Add relationship to Customer model
+        public virtual Customer Customer { get; set; }
     }
 }
