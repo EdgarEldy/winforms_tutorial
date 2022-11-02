@@ -1,3 +1,5 @@
+using System;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace winforms_tutorial.Models
@@ -8,9 +10,21 @@ namespace winforms_tutorial.Models
         // Constructor
         public Product()
         {
-            
+
         }
-        
+
         // Product properties goes here...
+        [Key]
+        public int Id { get; set; }
+
+        public int? CategoryId { get; set; }
+
+        public string ProductName { get; set; }
+
+        public double UnitPrice { get; set; }
+
+        public DateTime CreatedAt { get; set; }
+
+        public DateTime UpdatedAt { get; set; }
     }
 }
