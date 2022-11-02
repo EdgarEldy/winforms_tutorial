@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -10,7 +11,7 @@ namespace winforms_tutorial.Models
         // Constructor
         public Category()
         {
-            
+            this.Products = new HashSet<Product>();
         }
 
         // Category properties goes here...
@@ -22,5 +23,8 @@ namespace winforms_tutorial.Models
         public DateTime CreatedAt { get; set; }
 
         public DateTime UpdatedAt { get; set; }
+
+        // Add relationship to Product model
+        public virtual ICollection<Product> Products { get; set; }
     }
 }
