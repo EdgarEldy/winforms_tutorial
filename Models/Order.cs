@@ -33,5 +33,8 @@ namespace winforms_tutorial.Models
 
         // Add relationship to Customer model
         public virtual Customer Customer { get; set; }
+
+        // Add relationship to Product model
+        public virtual Product Product { get; set; }
     }
 }
