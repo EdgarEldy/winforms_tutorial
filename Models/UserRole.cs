@@ -22,5 +22,8 @@ namespace winforms_tutorial.Models
         [ForeignKey("Role")] 
         [Column(Order = 2)]
         public int? RoleId { get; set; }
+        
+        // Add relationship to User Model
+        public virtual User User { get; set; }
     }
 }
