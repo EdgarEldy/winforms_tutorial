@@ -1,3 +1,4 @@
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace winforms_tutorial.Models
@@ -11,5 +12,15 @@ namespace winforms_tutorial.Models
         }
 
         // Properties goes here...
+        [Key] 
+        public int Id { get; set; }
+
+        [ForeignKey("User")] 
+        [Column(Order = 1)]
+        public int? UserId { get; set; }
+
+        [ForeignKey("Role")] 
+        [Column(Order = 2)]
+        public int? RoleId { get; set; }
     }
 }
