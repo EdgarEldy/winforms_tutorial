@@ -26,5 +26,8 @@ namespace winforms_tutorial.Data
         
         // Register User DbSet
         public DbSet<User> Users { get; set; }
+        
+        // Register Role DbSet
+        public DbSet<Role> Roles { get; set; }
     }
 }
