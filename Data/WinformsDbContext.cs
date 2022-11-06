@@ -23,5 +23,8 @@ namespace winforms_tutorial.Data
 
         // Register Order DbSet
         public DbSet<Order> Orders { get; set; }
+        
+        // Register User DbSet
+        public DbSet<User> Users { get; set; }
     }
 }
