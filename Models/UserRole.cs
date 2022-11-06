@@ -25,5 +25,8 @@ namespace winforms_tutorial.Models
         
         // Add relationship to User Model
         public virtual User User { get; set; }
+        
+        // Add relationship to Role Model
+        public virtual Role Role { get; set; }
     }
 }
